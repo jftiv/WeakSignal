@@ -12,7 +12,7 @@ public class Program
         if (inputData.Length == 1)
         {
             char yOrN = Convert.ToChar(inputData);
-//	        Optional: Roll Array.
+// Optional: Roll Array.
             int[] attempts = new int[10];
             try
             {
@@ -25,7 +25,7 @@ public class Program
                         if (rnd1 == rnd2)
                         {
                             Console.WriteLine("Data has been received by the space craft after {0} attempts.", i);
-//	                        Optional: Allows user to see random rolls after system completes. 
+// Optional: Allows user to see random rolls after system completes. 
                             Array.Resize(ref attempts, i);
                             Console.Write("{0}: [", rnd1);
                             foreach (int a in attempts)
@@ -33,7 +33,7 @@ public class Program
                                 Console.Write(" {0} ", a);
                             }
                             Console.Write("]");
-//	                        Roll Viewer End.
+// Roll Viewer End.
                             break;
                         }
                         if (i == 10 && rnd1 != rnd2)
